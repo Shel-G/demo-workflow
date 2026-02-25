@@ -1,46 +1,47 @@
 import React, { useState } from "react";
 
+// Dark mode COLORS (only)
 const COLORS = {
   // Surfaces
-  b: "#F8FAFC",        // app background
-  card: "#FFFFFF",     // card surface
-  card2: "#F1F5F9",    // subtle surface (section bg / table header bg)
+  b: "#0B1220",        // app background (near-slate)
+  card: "#0F172A",     // card surface
+  card2: "#111C33",    // subtle surface (section/table header)
 
   // Borders & dividers
-  border: "#E2E8F0",
-  borderStrong: "#CBD5E1", // input focus ring以外的更强分割线
+  border: "#1F2A44",
+  borderStrong: "#2A3A5F",
 
   // Text
-  text: "#0F172A",     // primary text
-  dim: "#475569",      // secondary text
-  muted: "#64748B",    // meta/placeholder（你原 muted #94A3B8 太浅，浅底上可读性偏弱）
-  disabled: "#94A3B8",
+  text: "#E5E7EB",     // primary text
+  dim: "#C7D2FE",      // secondary text (cool, readable)
+  muted: "#94A3B8",    // meta/placeholder
+  disabled: "#64748B",
 
   // Accents
-  blue: "#0284C7",     // primary
-  blueHover: "#0369A1",
-  blueSoft: "#E0F2FE", // badge/bg
+  blue: "#38BDF8",
+  blueHover: "#0EA5E9",
+  blueSoft: "#082F49",
 
-  teal: "#0D9488",     // secondary
-  tealHover: "#0F766E",
-  tealSoft: "#CCFBF1",
+  teal: "#2DD4BF",
+  tealHover: "#14B8A6",
+  tealSoft: "#042F2E",
 
   // System tags
-  orange: "#EA580C",   // B端
-  orangeSoft: "#FFEDD5",
-  purple: "#7C3AED",   // AI/data
-  purpleSoft: "#EDE9FE",
-  green: "#16A34A",    // C端
-  greenSoft: "#DCFCE7",
+  orange: "#FB923C",   // B端
+  orangeSoft: "#2A1707",
+  purple: "#A78BFA",   // AI/data
+  purpleSoft: "#1D1233",
+  green: "#4ADE80",    // C端
+  greenSoft: "#052012",
 
   // Status
-  danger: "#DC2626",
-  dangerSoft: "#FEE2E2",
-  warn: "#D97706",
-  warnSoft: "#FEF3C7",
+  danger: "#F87171",
+  dangerSoft: "#2A0B0B",
+  warn: "#FBBF24",
+  warnSoft: "#2A1B07",
 
-  // Shadow (for light theme)
-  shadow: "0 1px 2px rgba(15, 23, 42, 0.06), 0 8px 24px rgba(15, 23, 42, 0.08)",
+  // Shadow (for dark theme: lighter, shorter)
+  shadow: "0 1px 2px rgba(0,0,0,0.6), 0 10px 24px rgba(0,0,0,0.5)",
 };
 
 
