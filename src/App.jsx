@@ -1,18 +1,48 @@
 import React, { useState } from "react";
 
 const COLORS = {
-  b: "#F8FAFC",       // background 改为浅灰白
-  card: "#FFFFFF",    // card bg 改为纯白
-  border: "#E2E8F0",  // border 改为浅灰
-  blue: "#0284C7",    // primary accent 加深便于浅色背景显示
-  teal: "#0D9488",    // secondary 加深
-  orange: "#EA580C",  // B端
-  purple: "#7C3AED",  // AI/data
-  green: "#16A34A",   // C端
-  muted: "#94A3B8",
-  text: "#0F172A",    // 主文字改为深色
-  dim: "#475569",     // 次要文字改为深灰
+  // Surfaces
+  b: "#F8FAFC",        // app background
+  card: "#FFFFFF",     // card surface
+  card2: "#F1F5F9",    // subtle surface (section bg / table header bg)
+
+  // Borders & dividers
+  border: "#E2E8F0",
+  borderStrong: "#CBD5E1", // input focus ring以外的更强分割线
+
+  // Text
+  text: "#0F172A",     // primary text
+  dim: "#475569",      // secondary text
+  muted: "#64748B",    // meta/placeholder（你原 muted #94A3B8 太浅，浅底上可读性偏弱）
+  disabled: "#94A3B8",
+
+  // Accents
+  blue: "#0284C7",     // primary
+  blueHover: "#0369A1",
+  blueSoft: "#E0F2FE", // badge/bg
+
+  teal: "#0D9488",     // secondary
+  tealHover: "#0F766E",
+  tealSoft: "#CCFBF1",
+
+  // System tags
+  orange: "#EA580C",   // B端
+  orangeSoft: "#FFEDD5",
+  purple: "#7C3AED",   // AI/data
+  purpleSoft: "#EDE9FE",
+  green: "#16A34A",    // C端
+  greenSoft: "#DCFCE7",
+
+  // Status
+  danger: "#DC2626",
+  dangerSoft: "#FEE2E2",
+  warn: "#D97706",
+  warnSoft: "#FEF3C7",
+
+  // Shadow (for light theme)
+  shadow: "0 1px 2px rgba(15, 23, 42, 0.06), 0 8px 24px rgba(15, 23, 42, 0.08)",
 };
+
 
 const phases = [
   {
