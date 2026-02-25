@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 
 const COLORS = {
-  b: "#0F172A",       // background
-  card: "#1E293B",    // card bg
-  border: "#334155",  // border
-  blue: "#38BDF8",    // primary accent
-  teal: "#2DD4BF",    // secondary
-  orange: "#FB923C",  // B端
-  purple: "#A78BFA",  // AI/data
-  green: "#4ADE80",   // C端
-  muted: "#64748B",
-  text: "#E2E8F0",
-  dim: "#94A3B8",
+  b: "#F8FAFC",       // background 改为浅灰白
+  card: "#FFFFFF",    // card bg 改为纯白
+  border: "#E2E8F0",  // border 改为浅灰
+  blue: "#0284C7",    // primary accent 加深便于浅色背景显示
+  teal: "#0D9488",    // secondary 加深
+  orange: "#EA580C",  // B端
+  purple: "#7C3AED",  // AI/data
+  green: "#16A34A",   // C端
+  muted: "#94A3B8",
+  text: "#0F172A",    // 主文字改为深色
+  dim: "#475569",     // 次要文字改为深灰
 };
 
 const phases = [
